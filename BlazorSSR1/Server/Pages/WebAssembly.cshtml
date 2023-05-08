@@ -1,0 +1,10 @@
+﻿@page "/webassembly"
+@using Microsoft.AspNetCore.Components.Web
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Web Assembly: Prerendered</h1>
+
+<component type="typeof(BlazorSSR1.Client.Components.Simple)" render-mode="WebAssemblyPrerendered" />
+
+
+<script src="_framework/blazor.webassembly.js"></script>

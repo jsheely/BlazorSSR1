@@ -1,0 +1,10 @@
+﻿@page "/servercomponent"
+<base href="~/" />
+<h1>Server Component</h1>
+
+<div id="app"></div>
+
+@(await Html.RenderComponentAsync<BlazorSSR1.Components.Counter>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>
+
+

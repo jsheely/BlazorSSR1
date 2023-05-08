@@ -1,0 +1,19 @@
+﻿@page "/sampleshared"
+@{
+    Layout = "_Layout";
+}
+<h1>Sample Shared Library Component</h1>
+<p>This is broken. Check console.log until I figured this out</p>
+<div id="app"></div>
+    @*@(await Html.RenderComponentAsync<Demo1>(RenderMode.Static))*@
+    @*@(await Html.RenderComponentAsync<BlazorSSR1.Components.Counter>(RenderMode.ServerPrerendered))*@
+    @(await Html.RenderComponentAsync<BlazorSSR1.Components.Counter>(RenderMode.WebAssemblyPrerendered))
+    @*<component type="typeof(BlazorSSR1.Client.Counter)" render-mode="WebAssemblyPrerendered" />*@
+
+
+
+<script src="_framework/blazor.webassembly.js"></script>
+
+@*<script src="_framework/blazor.server.js"></script>*@
+
+

@@ -1,0 +1,9 @@
+﻿@page "/server"
+@using Microsoft.AspNetCore.Components.Web
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Server Page</h1>
+
+<component type="typeof(BlazorSSR1.Components.Counter)" render-mode="Server" />
+
+<script src="_framework/blazor.server.js"></script>

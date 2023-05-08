@@ -1,0 +1,9 @@
+﻿@page "/serverpre"
+@using Microsoft.AspNetCore.Components.Web
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Server Pre-Rendered</h1>
+
+<component type="typeof(BlazorSSR1.Components.Counter)" render-mode="ServerPrerendered" />
+
+<script src="_framework/blazor.server.js"></script>

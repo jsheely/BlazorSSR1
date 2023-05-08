@@ -1,0 +1,14 @@
+﻿@page "/sample"
+@model BlazorSSR1.Server.Pages.SampleModel
+<base href="~/" />
+<h1>Sample Page</h1>
+<div id="app"></div>
+    @(await Html.RenderComponentAsync<BlazorSSR1.Client.Components.Simple>(RenderMode.WebAssemblyPrerendered))
+
+
+
+<script src="_framework/blazor.webassembly.js"></script>
+
+@*<script src="_framework/blazor.server.js"></script>*@
+
+
